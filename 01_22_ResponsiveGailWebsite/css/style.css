@@ -1,0 +1,63 @@
+*{
+ margin: 2px;
+}
+/*The body become the 
+flex-container we make its flex ,nothing will changes*/
+body{
+    font-size: 24px;
+ height: 100vh;
+    text-align: center;
+    color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+}
+.flex-header{
+    background-color: rgb(6, 36, 36);
+    height: 100px;
+padding-top: 3rem;
+padding-bottom: 3rem;
+
+}
+.flex-main{
+    display: flex
+    ;/*The items lay sidebyside
+     after apply flex properties to the main */
+     flex: 1;/*To set the content Vertically,its take the availanble space given 
+     and occupied the whole available space*/
+}
+.flex-article{
+    background-color: chocolate;
+    padding-top: 3rem;
+    flex: 3 3;/* its takes 3* grow and 3*schrink
+    and bigger size than the NAV AND SIDE
+     BAR.Means bigger size than te others*/
+    
+}
+.flex-nav{
+    background-color: rgb(25, 15, 199);
+padding-top: 3rem;
+flex: 1 1 5rem;
+}
+.flex-aside{
+background-color: rgb(42, 73, 73);
+padding-top: 3rem;
+flex: 1 1 5rem; /* 1 is for grow,shrink and the 3rem 
+is the initial width to begin with. */
+}
+
+
+.flex-footer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    height: 100px;
+background-color: rgb(17, 39, 17);
+}
+/*To make it responsive by adding @medial querries*/
+/*
+@media (min-width: 360px) {
+    .flex-main{
+flex-direction: column;
+    }
+    
+}*/
